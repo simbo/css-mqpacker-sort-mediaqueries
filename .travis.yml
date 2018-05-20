@@ -20,3 +20,4 @@ deploy:
   on:
     tags: true
     repo: simbo/css-mqpacker-sort-mediaqueries
+  skip_cleanup: true
