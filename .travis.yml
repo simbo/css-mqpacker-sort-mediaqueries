@@ -7,6 +7,12 @@ env:
   global:
     secure: pNCnPHN/N55H7557bm9S3wtmz2kJ6ww0IxJ0bI7gnPtRSPMUEK0PD3m81shajPBEHpMmgosdlImMWLbXBOqjMIjOZvbIarg+tEAckLiZs5/4OQj9oUHIjvzLg7a2QU4GwhmfjcxZBgr5zLfS24ikBWVr6DEOvb+1j8itvA+6S1DsSOJfOs1MJFsWtw9linBKc2qbWKPrzS/k0T5XPOctp3jyd8/iuOc0k871ENzk/M48aiitJxxSHUTtXGn9QIZqkgp53ne5z2mZ+9nLAutlJGpdibEXAUF5EOEkPbP4x7cLRQG0ZrtH5yhrww19Ty6FTxGrX0yWMEksAO+rYsNhwj22ehyZpOworjjB0EGzeIOU/gvdvdyDUlOZyD2vdqWurJE0KhjT2xVvHSOakOjDjTyqpRjElSaWtuOTEQ6xXu/VZTKLfARFSZKfoFlHgfGaWgNOOWizXOBs/xEtykDh/6Ovw70Fjus2MLHqIwSR195aKXmUM10dM1t35MdU/5Pdr/u6tKGugCCT/IgPJTEK7Vb4D4/N5rQif+fvAIVR3cPtmaDoASEJ8y/gPcQwTbsbzMaGgZp4ippGIhLesnnuMSrSBAltNXUFjew3yCqJWwot3pBtZ6xiBUsIdBpKNZf3+QT3T0OpiqVHwmxc2ibpK+LI5NJugt4eKlD2Cybc2wY=
 
+before_script:
+- yarn run build
+
+script:
+- yarn run test
+
 deploy:
   provider: npm
   email: simbo@simbo.de
